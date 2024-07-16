@@ -7,31 +7,29 @@
    <title>Python</title>
  </head>
  <body>
-   <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Pythonimg" >
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python-logo"></img>
     <nav id="navbar">
            <header>Python Documentation</header>
            <ul>
              <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-             <li><a class="nav-link" href="#What_you_should_already_know ">What you should already know </a></li>
+             <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
              <li><a class="nav-link" href="#Variables">Variables </a></li>
              <li><a class="nav-link" href="#Declaring_variables">Declaring variables</a></li>
              <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
              <li><a class="nav-link" href="#Conditional_Statements">Conditional Statements</a></li>
+             <li><a class="nav-link" href="#loops">Loops</a></li>
              <li><a class="nav-link" href="#Function_Declaration">Function Declaration</a></li>
              <li><a class="nav-link" href="#References">References</a></li>
           </ul>
     </nav>
    <main id="main-doc">
      <section class="main-section" id="Introduction">
-        <a class="nav-link"></a>
-        <header>Introdution</header>
-           <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming.</p>
+      <header>Introduction</header>
+       <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming.</p>
      </section>
-     <section class="main-section" id="What_you should_already_know">
-       <a class="nav-link"></a>
-        <header>What you should already know </header>
-        <p>This guide assumes you have the following basic background:
-        </p>
+     <section class="main-section" id="What_you_should_already_know">
+      <header>What you should already know</header>
+        <p>This guide assumes you have the following basic background:</p>
          <ul>
            <li>A general understanding of computer programming concepts.</li>
            <li>Good working knowledge of basic data types and operators.</li>
@@ -40,14 +38,12 @@
          <ul>
      </section>
      <section class="main-section" id="Variables">
-       <a class="nav-link"></a>
-      <header>Variables </header>
+       <header>Variables</header>
       <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
          A Python identifier must start with a letter or underscore (_); subsequent characters can also be digits (0-9). Because Python is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).
          You can use Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are number_hits, temp99, and _name.</p>
      </section>
      <section class="main-section" id="Declaring_variables">
-       <a class="nav-link"></a>
       <header>Declaring variables</header>
       <p>
         Declaring variables in Python is a way to store a value in a named location. Here are some examples:
@@ -59,7 +55,7 @@
       <li>
         <p>Example 2: Declaring multiple variables<p>
         <code>x, y, z = 1, 2, 3</code>
-         This is equivalent to declaring each variable separately:
+         This is equivalent to declaring each variable separately:<br>
         <code>x = 1 <br> y = 2 <br> z = 3</code>
       </li>
       <li>
@@ -88,12 +84,10 @@
         In this example, we declare a variable coordinates with a tuple value.
       </li>
     </ul>
-These are just a few examples of how you can declare variables in Python. Remember to always use meaningful variable names and follow the PEP 8 style guide for naming conventions.
-      </p>
+       <p>These are just a few examples of how you can declare variables in Python. Remember to always use meaningful variable names and follow the PEP 8 style guide for naming conventions.</p>
      </section>
     <section class="main-section" id="Data_Types">
-      <a class="nav-link" href="#"></a>
-     <header>Data Types in Python</header>
+     <header>Data Types</header>
      <p>In Python, a data type is a classification of data that determines the type of value a variable can hold, the operations that can be performed on it, and the amount of memory it occupies. Python has several built-in data types, which can be categorized into several groups:
      <header>Numeric Types</header>
        <ul>
@@ -102,9 +96,9 @@ These are just a few examples of how you can declare variables in Python. Rememb
          <li>Complex Numbers (complex): Numbers with real and imaginary parts, e.g., 3+4j, -2-3j, etc</li>
           <p>Example:</p>
           <code>
-          x = 5  # integer
-          y = 3.14  # float
-          z = 3 + 4j  # complex
+             x = 5  # integer<br>
+             y = 3.14  # float<br>
+             z = 3 + 4j  # complex<br>
           </code>
       </ul>
      <header>Sequence Types</header>
@@ -114,9 +108,9 @@ These are just a few examples of how you can declare variables in Python. Rememb
         <li>Tuples (tuple): A collection of items that cannot be changed, e.g., (1, 2, 3), ("a", "b", "c"), etc.</li>
          <p>Example:</p>
         <code>
-          name = "John"  # string
-          numbers = [1, 2, 3]  # list
-          colors = ("red", "green", "blue")  # tuple
+          name = "John"  # string<br>
+          numbers = [1, 2, 3]  # list<br>
+          colors = ("red", "green", "blue")  # tuple<br>
         </code>
       </ul>
       <header>Mapping Types</header>
@@ -124,7 +118,7 @@ These are just a few examples of how you can declare variables in Python. Rememb
         <li>Dictionaries (dict): A collection of key-value pairs, e.g., {"name": "John", "age": 30}, etc.</li>
         <p>Example:</p>
         <code>
-          person = {"name": "John", "age": 30, "city": "New York"}
+          person = {"name": "John", "age": 30, "city": "New York"}<br>
         </code> 
       </ul>
       <header>Set Types</header>
@@ -133,8 +127,8 @@ These are just a few examples of how you can declare variables in Python. Rememb
         <li>Frozensets (frozenset): An immutable set, e.g., frozenset({1, 2, 3}), etc.</li>
         <p>Example:</p>
         <code>
-          numbers = {1, 2, 3}  # set
-          frozen_numbers = frozenset({1, 2, 3})  # frozenset
+          numbers = {1, 2, 3}  # set<br>
+          frozen_numbers = frozenset({1, 2, 3})  # frozenset<br>
         </code>
       </ul>
       <header>Boolean Type</header>
@@ -142,8 +136,8 @@ These are just a few examples of how you can declare variables in Python. Rememb
         <li>Booleans (bool): Represents the truth values True and False.</li>
         <p>Example:</p>
         <code>
-          is_admin = True  # boolean
-          is_active = False  # boolean
+          is_admin = True  # boolean<br>
+          is_active = False  # boolean<br>
         </code>
       </ul>
       <header>None Type</header>
@@ -151,7 +145,7 @@ These are just a few examples of how you can declare variables in Python. Rememb
         <li>None (NoneType): Represents the absence of a value or a null value.</li>
         <p>Example:</p>
         <code>
-          x = None  # None
+          x = None  # None<br>
         </code>
       </ul>
       <header>Special Types</header>
@@ -173,119 +167,117 @@ These are just a few examples of how you can declare variables in Python. Rememb
      </p>
     </section>
     <section class="main-section" id="Conditional_Statements">
-        <a class="nav-link"></a>
-     <header>Conditional Statements in Python</header>
+      <header>Conditional Statements</header>
      <p>Conditional statements are used to execute different blocks of code based on certain conditions or decisions. In Python, there are several types of conditional statements:</p>
       <header>If Statement</header>
       <p>The if statement is used to execute a block of code if a condition is true. It has the following syntax:</p>
       <code>
-        if condition:
-            # code block
+        if condition:<br>
+            # code block<br>
       </code>
       <p>Example:</p>
       <code>
-        x = 5
-        if x > 0:
-            print("x is positive")
+        x = 5<br>
+        if x > 0:<br>
+            print("x is positive")<br>
       </code>
       <p>This code will print "x is positive" because the condition x > 0 is true.</p>
       <header>If-Else Statement</header>
       <p>The if-else statement is used to execute one block of code if a condition is true and another block of code if the condition is false. It has the following syntax:</p>
       <code>
-        if condition:
-            # code block 1
-        else:
-            # code block 2
+        if condition:<br>
+            # code block 1<br>
+        else:<br>
+            # code block 2<br>
       </code>
       <p>Example:</p>
       <code>
-        x = -5
-        if x > 0:
-            print("x is positive")
-        else:
-            print("x is negative")
+        x = -5<br>
+        if x > 0:<br>
+            print("x is positive")<br>
+        else:<br>
+            print("x is negative")<br>
       </code>
       <p>This code will print "x is negative" because the condition x > 0 is false.</p>
       <header>If-Elif-Else Statement</header>
       <p>The if-elif-else statement is used to execute one block of code if a condition is true, another block of code if another condition is true, and a default block of code if all conditions are false. It has the following syntax:</p>
       <code>
-        if condition1:
-            # code block 1
-        elif condition2:
-            # code block 2
-        else:
-            # code block 3
+        if condition1:<br>
+            # code block 1<br>
+        elif condition2:<br>
+            # code block 2<br>
+        else:<br>
+            # code block 3<br>
       </code>
       <p>Example:</p>
       <code>
-        x = 0
-        if x > 0:
-            print("x is positive")
-        elif x < 0:
-            print("x is negative")
-        else:
-            print("x is zero")
+        x = 0<br>
+        if x > 0:<br>
+            print("x is positive")<br>
+        elif x < 0:<br>
+            print("x is negative")<br>
+        else:<br>
+            print("x is zero")<br>
       </code>
       <p>This code will print "x is zero" because the condition x > 0 and x < 0 are false, and the else block is executed.</p>
       <header>Nested If Statement</header>
       <p>Nested if statements are if statements within if statements. They are used to test multiple conditions. It has the following syntax:</p>
       <code>
-        if condition1:
-            if condition2:
-                # code block
+        if condition1:<br>
+            if condition2:<br>
+                # code block<br>
       </code>
       <p>Example:</p>
       <code>
-        x = 5
-        y = 10
-        if x > 0:
-            if y > 0:
-                print("x and y are positive")
+        x = 5<br>
+        y = 10<br>
+        if x > 0:<br>
+            if y > 0:<br>
+                print("x and y are positive")<br>
       </code>
       <p>This code will print "x and y are positive" because both conditions x > 0 and y > 0 are true.</p>
       <header>Conditional Expressions</header>
       <p>Conditional expressions are used to assign a value to a variable based on a condition. It has the following syntax:</p>
       <code>
-        variable = value1 if condition else value2
+        variable = value1 if condition else value2<br>
       </code>
       <p>Example:</p>
       <code>
-        x = 5
-        result = "positive" if x > 0 else "negative"
-        print(result)
+        x = 5<br>
+        result = "positive" if x > 0 else "negative"<br>
+        print(result)<br>
       </code>
       <p>This code will print "positive" because the condition x > 0 is true.</p>
       <p>These are the basic conditional statements in Python. Understanding how to use them is essential for writing efficient and effective code.</p>
     </section>
      <section class="main-section" id="loops">
-        <a class="nav-link"></a>
-     <header>Loops</header>
+      <header>Loops</header>   
       <p>Loops are used to execute a block of code multiple times. In Python, there are two main types of loops: for loops and while loops.</p>
         <header>For Loops</header>
         <p>The for loop is used to iterate over a sequence (e.g., a list, tuple, string) or other iterable objects. It has the following syntax:</p>
         <code>
-          for item in sequence:
-              # code block
+          for item in sequence:<br>
+              # code block<br>
         </code>
         <p>Example:</p>
         <code>
-          fruits = ["apple", "banana", "cherry"]
-          for fruit in fruits:
-              print(fruit)
+          fruits = ["apple", "banana", "cherry"]<br>
+          for fruit in fruits:<br>
+              print(fruit)<br>
         </code>
         <p>This code will print each fruit in the list fruits on a new line.</p>
         <header>While Loops</header>
         <p>The while loop is used to execute a block of code as long as a condition is true. It has the following syntax:</p>
         <code>
-          while condition:
-              # code block
+          while condition:<br>
+              # code block<br>
         </code>
         <p>Example:</p>
         <code>
-          x = 0
-          while x < 5:
-              print(x)
-              x += 1
+          x = 0<br>
+          while x < 5:<br>
+              print(x)<br>
+              x += 1<br>
         </code>
         <p>This code will print the numbers 0 to 4 on separate lines.</p>
         <header>Loop Control Statements</header>
@@ -293,87 +285,85 @@ These are just a few examples of how you can declare variables in Python. Rememb
         <header>Break Statement</header>
         <p>The break statement is used to exit a loop prematurely. It has the following syntax:</p>
         <code>
-          for item in sequence:
-              if condition:
-                  break
+          for item in sequence:<br>
+              if condition:<br>
+                  break<br>
         </code>
         <p>Example:</p>
         <code>
-          fruits = ["apple", "banana", "cherry"]
-          for fruit in fruits:
-              if fruit == "banana":
-                  break
-              print(fruit)
+          fruits = ["apple", "banana", "cherry"]<br>
+          for fruit in fruits:<br>
+              if fruit == "banana":<br>
+                  break<br>
+              print(fruit)<br>
         </code>
         <p>This code will print "apple" and exit the loop when the fruit is "banana".</p>
         <header>Continue Statement</header>
         <p>The continue statement is used to skip the rest of the code in a loop and continue to the next iteration. It has the following syntax:</p>
         <code>
-          for item in sequence:
-              if condition:
-                  continue
+          for item in sequence:<br>
+              if condition:<br>
+                  continue<br>
         </code>
         <p>Example:</p>
         <code>
-          fruits = ["apple", "banana", "cherry"]
-          for fruit in fruits:
-              if fruit == "banana":
-                  continue
-              print(fruit)
+          fruits = ["apple", "banana", "cherry"]<br>
+          for fruit in fruits:<br>
+              if fruit == "banana":<br>
+                  continue<br>
+              print(fruit)<br>
         </code>
         <p>This code will skip printing "banana" and continue to the next fruit.</p>
     </section>
     <section class="main-section" id="Function_Declaration">
-      <a class="nav-link"></a>
    <header>Function Declaration</header>
     <p>Functions are reusable blocks of code that perform a specific task. In Python, you can define a function using the def keyword followed by the function name and parentheses containing any parameters. The function body is indented below the def statement. Here is an example of a simple function:</p>
     <code>
-      def greet(name):
-          return "Hello, " + name + "!"
+      def greet(name):<br>
+          return "Hello, " + name + "!"<br>
     </code>
     <p>This function takes a name as a parameter and returns a greeting message. You can call the function by using its name followed by parentheses containing any arguments. Here is an example:</p>
     <code>
-      message = greet("John")
-      print(message)  # Output: Hello, John!
+      message = greet("John")<br>
+      print(message)  # Output: Hello, John!<br>
     </code>
     <p>Functions can also have default parameters, which are used when no argument is provided. Here is an example:</p>
     <code>
-      def greet(name="World"):
-          return "Hello, " + name + "!"
+      def greet(name="World"):<br>
+          return "Hello, " + name + "!"<br>
     </code>
     <p>This function has a default parameter "World" that is used when no argument is provided. You can call the function without any arguments:</p>
     <code>
-      message = greet()
-      print(message)  # Output: Hello, World!
+      message = greet()<br>
+      print(message)  # Output: Hello, World!<br>
     </code>
     <p>Functions can return multiple values using tuples. Here is an example:</p>
     <code>
-      def get_name_and_age():
-          return "John", 30
+      def get_name_and_age():<br>
+          return "John", 30<br>
     </code>
     <p>This function returns a tuple containing the name and age. You can unpack the tuple into separate variables:</p>
     <code>
-      name, age = get_name_and_age()
-      print(name)  # Output: John
-      print(age)  # Output: 30
+      name, age = get_name_and_age()<br>
+      print(name)  # Output: John<br>
+      print(age)  # Output: 30<br>
     </code>
     <p>Functions can also have variable-length arguments using the *args and **kwargs syntax. Here is an example:</p>
     <code>
-      def sum(*args):
-          total = 0
-          for num in args:
-              total += num
-          return total
+      def sum(*args):<br>
+          total = 0<br>
+          for num in args:<br>
+              total += num<br>
+          return total<br>
     </code>
     <p>This function takes any number of arguments and returns their sum. You can call the function with multiple arguments:</p>
     <code>
-      result = sum(1, 2, 3, 4, 5)
-      print(result)  # Output: 15
+      result = sum(1, 2, 3, 4, 5)<br>
+      print(result)  # Output: 15<br>
     </code>
     <p>These are just a few examples of how you can declare and use functions in Python. Functions are an essential part of programming and help you write modular and reusable code.</p>
     </section>
     <section class="main-section" id="References">
-      <a class="nav-link"></a>
       <header>References</header>
      <ul>
        <li><a href="https://docs.python.org/3/tutorial/index.html">Python Documentation</a></li>
