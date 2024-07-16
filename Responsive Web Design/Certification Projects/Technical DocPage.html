@@ -2,40 +2,131 @@
 <html lang="en">
  <head>
    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="Technical DocPage.css">
-   <title>Python Documentation Page</title>
+   <meta name="viewport">
+   <link rel="stylesheet" href="styles.css">
+   <title>Python</title>
  </head>
  <body>
+   <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Pythonimg" >
     <nav id="navbar">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Pythonimg" >
            <header>Python Documentation</header>
            <ul>
              <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-             <li><a class="nav-link" href="#"></a></li>
-             <li><a class="nav-link" href="#"></a></li>
+             <li><a class="nav-link" href="#What_you_should_already_know ">What you should already know </a></li>
+             <li><a class="nav-link" href="#Variables">Variables </a></li>
+             <li><a class="nav-link" href="#Declaring_variables">Declaring variables</a></li>
+             <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
              <li><a class="nav-link" href="#"></a></li>
              <li><a class="nav-link" href="#"></a></li>
           </ul>
     </nav>
    <main id="main-doc">
      <section class="main-section" id="Introduction">
+        <a class="nav-link"></a>
         <header>Introdution</header>
            <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming.</p>
      </section>
-     <section class="main-section" id="">
-        <header></header>
-        <p></p>
+     <section class="main-section" id="What_you should_already_know">
+       <a class="nav-link"></a>
+        <header>What you should already know </header>
+        <p>This guide assumes you have the following basic background:
+        </p>
+         <ul>
+           <li>A general understanding of computer programming concepts.</li>
+           <li>Good working knowledge of basic data types and operators.</li>
+           <li>Some programming experience.</li>
+           <li>If you are new to programming, try one of the tutorials linked on the main page about Python.</li>
+         <ul>
      </section>
-     <section class="main-section" id="">
-      <header></header>
-      <p></p>
+     <section class="main-section" id="Variables">
+       <a class="nav-link"></a>
+      <header>Variables </header>
+      <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
+
+A Python identifier must start with a letter or underscore (_); subsequent characters can also be digits (0-9). Because Python is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).
+You can use Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are number_hits, temp99, and _name.</p>
      </section>
-     <section class="main-section" id="">
-      <header></header>
-      <p></p>
+     <section class="main-section" id="Declaring_variables">
+       <a class="nav-link"></a>
+      <header>Declaring variables</header>
+      <p>
+        Declaring variables in Python is a way to store a value in a named location. Here are some examples:
+    <ul>
+      <li>Example 1: Declaring a single variable
+         <code>x = 5</code>
+          In this example, x is the variable name, and 5 is the value assigned to it. You can then use x in your code to refer to the value 5.
+      </li>
+      <li>
+        Example 2: Declaring multiple variables
+        <code>x, y, z = 1, 2, 3</code>
+         This is equivalent to declaring each variable separately:
+        <code>x = 1 <br> y = 2 <br> z = 3</code>
+      </li>
+      <li>
+        Example 3: Declaring variables with different data types
+        <code>name = "John"  # string <br> age = 30  # integer <br> height = 1.75  # float <br> is_admin = True  # boolean </code><br>
+        In this example, we declare four variables with different data types: name is a string, age is an integer, height is a float, and is_admin is a boolean.
+      </li>
+      <li>
+        Example 4: Declaring variables with assignment operators
+        <code>x = 5 x += 2  # x is now 7 <br> x -= 1  # x is now 6 <br> x *= 2  # x is now 12 <br> x /= 2  # x is now 6.0</code>
+        In this example, we use assignment operators to modify the value of x. The += operator adds 2 to x, the -= operator subtracts 1 from x, the *= operator multiplies x by 2, and the /= operator divides x by 2.
+      </li>
+      <li>
+        Example 5: Declaring variables with string formatting
+        <code>name = "John" <br> age = 30 <br> greeting = "Hello, my name is {name} and I am {age} years old." <br> print(greeting)  # Output: Hello, my name is John and I am 30 years old.</code>
+        In this example, we use string formatting to create a greeting message that includes the values of name and age.
+      </li>
+      <li>
+        Example 6: Declaring variables with list and dictionary
+        <code>fruits = ["apple", "banana", "cherry"] <br> person = {"name": "John", "age": 30, "city": "New York"}</code>
+        In this example, we declare two variables: fruits is a list of strings, and person is a dictionary with three key-value pairs.
+      </li>
+      <li>
+        Example 7: Declaring variables with tuple
+        <code>coordinates = (40.7128, -74.0060)</code>
+        In this example, we declare a variable coordinates with a tuple value.
+      </li>
+    </ul>
+These are just a few examples of how you can declare variables in Python. Remember to always use meaningful variable names and follow the PEP 8 style guide for naming conventions.
+      </p>
      </section>
+    <section class="main-section" id="Data_Types">
+      <a class="nav-link" href="#"></a>
+     <header>Data Types in Python</header>
+     <p>In Python, a data type is a classification of data that determines the type of value a variable can hold, the operations that can be performed on it, and the amount of memory it occupies. Python has several built-in data types, which can be categorized into several groups:
+     <header>Numeric Types</header>
+       <ul>
+         <li>Integers (int): Whole numbers, e.g., 1, 2, 3, etc.</li>
+         <li>Floating Point Numbers (float): Decimal numbers, e.g., 3.14, -0.5, etc.</li>
+         <li>Complex Numbers (complex): Numbers with real and imaginary parts, e.g., 3+4j, -2-3j, etc</li>
+           Example
+          <code>
+          x = 5  # integer
+          y = 3.14  # float
+          z = 3 + 4j  # complex
+          </code>
+      </ul>
+     <header>Sequence Types</header>
+      <ul>
+        <li>Strings (str): A sequence of characters, e.g., "hello", 'hello', etc. Strings can be enclosed in single quotes or double quotes.
+        <li>Lists (list): A collection of items that can be of any data type, e.g., [1, 2, 3], ["a", "b", "c"], etc.
+</li>
+        <li>Tuples (tuple): A collection of items that cannot be changed, e.g., (1, 2, 3), ("a", "b", "c"), etc.</li>
+</li>
+      </ul>
+        <li></li>
+        <li></li>
+      </ul>
+      </p>
+    </section>
     <section class="main-section" id="">
+        <a class="nav-link"></a>
+     <header></header>
+     <p></p>
+    </section>
+     <section class="main-section" id="">
+        <a class="nav-link"></a>
      <header></header>
      <p></p>
     </section>
@@ -43,4 +134,6 @@
    </main>
  </body>
  </html>
+
+
 
