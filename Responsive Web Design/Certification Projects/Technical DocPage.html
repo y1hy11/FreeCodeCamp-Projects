@@ -16,7 +16,7 @@
              <li><a class="nav-link" href="#Variables">Variables </a></li>
              <li><a class="nav-link" href="#Declaring_variables">Declaring variables</a></li>
              <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
-             <li><a class="nav-link" href="#"></a></li>
+             <li><a class="nav-link" href="#Conditional_Statements">Conditional Statements</a></li>
              <li><a class="nav-link" href="#"></a></li>
           </ul>
     </nav>
@@ -42,9 +42,8 @@
        <a class="nav-link"></a>
       <header>Variables </header>
       <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
-
-A Python identifier must start with a letter or underscore (_); subsequent characters can also be digits (0-9). Because Python is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).
-You can use Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are number_hits, temp99, and _name.</p>
+         A Python identifier must start with a letter or underscore (_); subsequent characters can also be digits (0-9). Because Python is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).
+         You can use Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are number_hits, temp99, and _name.</p>
      </section>
      <section class="main-section" id="Declaring_variables">
        <a class="nav-link"></a>
@@ -57,33 +56,33 @@ You can use Unicode letters such as å and ü in identifiers. You can also use t
           In this example, x is the variable name, and 5 is the value assigned to it. You can then use x in your code to refer to the value 5.
       </li>
       <li>
-        Example 2: Declaring multiple variables
+        <p>Example 2: Declaring multiple variables<p>
         <code>x, y, z = 1, 2, 3</code>
          This is equivalent to declaring each variable separately:
         <code>x = 1 <br> y = 2 <br> z = 3</code>
       </li>
       <li>
-        Example 3: Declaring variables with different data types
+        <p>Example 3: Declaring variables with different data types<p>
         <code>name = "John"  # string <br> age = 30  # integer <br> height = 1.75  # float <br> is_admin = True  # boolean </code><br>
         In this example, we declare four variables with different data types: name is a string, age is an integer, height is a float, and is_admin is a boolean.
       </li>
       <li>
-        Example 4: Declaring variables with assignment operators
+        <p>Example 4: Declaring variables with assignment operators</p>
         <code>x = 5 x += 2  # x is now 7 <br> x -= 1  # x is now 6 <br> x *= 2  # x is now 12 <br> x /= 2  # x is now 6.0</code>
         In this example, we use assignment operators to modify the value of x. The += operator adds 2 to x, the -= operator subtracts 1 from x, the *= operator multiplies x by 2, and the /= operator divides x by 2.
       </li>
       <li>
-        Example 5: Declaring variables with string formatting
+        <p>Example 5: Declaring variables with string formatting</p>
         <code>name = "John" <br> age = 30 <br> greeting = "Hello, my name is {name} and I am {age} years old." <br> print(greeting)  # Output: Hello, my name is John and I am 30 years old.</code>
         In this example, we use string formatting to create a greeting message that includes the values of name and age.
       </li>
       <li>
-        Example 6: Declaring variables with list and dictionary
+        <p>Example 6: Declaring variables with list and dictionary</p>
         <code>fruits = ["apple", "banana", "cherry"] <br> person = {"name": "John", "age": 30, "city": "New York"}</code>
         In this example, we declare two variables: fruits is a list of strings, and person is a dictionary with three key-value pairs.
       </li>
       <li>
-        Example 7: Declaring variables with tuple
+        <p>Example 7: Declaring variables with tuple</p>
         <code>coordinates = (40.7128, -74.0060)</code>
         In this example, we declare a variable coordinates with a tuple value.
       </li>
@@ -100,7 +99,7 @@ These are just a few examples of how you can declare variables in Python. Rememb
          <li>Integers (int): Whole numbers, e.g., 1, 2, 3, etc.</li>
          <li>Floating Point Numbers (float): Decimal numbers, e.g., 3.14, -0.5, etc.</li>
          <li>Complex Numbers (complex): Numbers with real and imaginary parts, e.g., 3+4j, -2-3j, etc</li>
-           Example
+          <p>Example:</p>
           <code>
           x = 5  # integer
           y = 3.14  # float
@@ -109,21 +108,153 @@ These are just a few examples of how you can declare variables in Python. Rememb
       </ul>
      <header>Sequence Types</header>
       <ul>
-        <li>Strings (str): A sequence of characters, e.g., "hello", 'hello', etc. Strings can be enclosed in single quotes or double quotes.
-        <li>Lists (list): A collection of items that can be of any data type, e.g., [1, 2, 3], ["a", "b", "c"], etc.
-</li>
+        <li>Strings (str): A sequence of characters, e.g., "hello", 'hello', etc. Strings can be enclosed in single quotes or double quotes.</li>
+        <li>Lists (list): A collection of items that can be of any data type, e.g., [1, 2, 3], ["a", "b", "c"], etc.</li>
         <li>Tuples (tuple): A collection of items that cannot be changed, e.g., (1, 2, 3), ("a", "b", "c"), etc.</li>
-</li>
+         <p>Example:</p>
+        <code>
+          name = "John"  # string
+          numbers = [1, 2, 3]  # list
+          colors = ("red", "green", "blue")  # tuple
+        </code>
       </ul>
-        <li></li>
-        <li></li>
+      <header>Mapping Types</header>
+      <ul>
+        <li>Dictionaries (dict): A collection of key-value pairs, e.g., {"name": "John", "age": 30}, etc.</li>
+        <p>Example:</p>
+        <code>
+          person = {"name": "John", "age": 30, "city": "New York"}
+        </code> 
       </ul>
-      </p>
+      <header>Set Types</header>
+      <ul>
+        <li>Sets (set): A collection of unique items, e.g., {1, 2, 3}, {1, 2, 2, 3}, etc.</li>
+        <li>Frozensets (frozenset): An immutable set, e.g., frozenset({1, 2, 3}), etc.</li>
+        <p>Example:</p>
+        <code>
+          numbers = {1, 2, 3}  # set
+          frozen_numbers = frozenset({1, 2, 3})  # frozenset
+        </code>
+      </ul>
+      <header>Boolean Type</header>
+      <ul>
+        <li>Booleans (bool): Represents the truth values True and False.</li>
+        <p>Example:</p>
+        <code>
+          is_admin = True  # boolean
+          is_active = False  # boolean
+        </code>
+      </ul>
+      <header>None Type</header>
+      <ul>
+        <li>None (NoneType): Represents the absence of a value or a null value.</li>
+        <p>Example:</p>
+        <code>
+          x = None  # None
+        </code>
+      </ul>
+      <header>Special Types</header>
+      <ul>
+        <li>Ellipsis (ellipsis): Represents a placeholder for code that has not been implemented yet.</li>
+        <li>NotImplemented (NotImplementedType): Represents a method that has not been implemented yet.</li>
+        <li>ModuleType: Represents a module.</li>
+        <li>FunctionType: Represents a function.</li>
+        <li>MethodType: Represents a method.</li>
+        <li>CodeType: Represents a code object.</li>
+        <li>FrameType: Represents a frame object.</li>
+        <li>TracebackType: Represents a traceback object.</li>
+        <li>GeneratorType: Represents a generator object.</li>
+        <li>CoroutineType: Represents a coroutine object.</li>
+        <li>AsyncGeneratorType: Represents an asynchronous generator object.</li>
+        <li>GetSetDescriptorType: Represents a get-set descriptor object.</li>
+        <li>MemberDescriptorType: Represents a member descriptor object.</li>
+      </ul>
+     </p>
     </section>
-    <section class="main-section" id="">
+    <section class="main-section" id="Conditional_Statements">
         <a class="nav-link"></a>
-     <header></header>
-     <p></p>
+     <header>Conditional Statements in Python</header>
+     <p>Conditional statements are used to execute different blocks of code based on certain conditions or decisions. In Python, there are several types of conditional statements:</p>
+      <header>If Statement</header>
+      <p>The if statement is used to execute a block of code if a condition is true. It has the following syntax:</p>
+      <code>
+        if condition:
+            # code block
+      </code>
+      <p>Example:</p>
+      <code>
+        x = 5
+        if x > 0:
+            print("x is positive")
+      </code>
+      <p>This code will print "x is positive" because the condition x > 0 is true.</p>
+      <header>If-Else Statement</header>
+      <p>The if-else statement is used to execute one block of code if a condition is true and another block of code if the condition is false. It has the following syntax:</p>
+      <code>
+        if condition:
+            # code block 1
+        else:
+            # code block 2
+      </code>
+      <p>Example:</p>
+      <code>
+        x = -5
+        if x > 0:
+            print("x is positive")
+        else:
+            print("x is negative")
+      </code>
+      <p>This code will print "x is negative" because the condition x > 0 is false.</p>
+      <header>If-Elif-Else Statement</header>
+      <p>The if-elif-else statement is used to execute one block of code if a condition is true, another block of code if another condition is true, and a default block of code if all conditions are false. It has the following syntax:</p>
+      <code>
+        if condition1:
+            # code block 1
+        elif condition2:
+            # code block 2
+        else:
+            # code block 3
+      </code>
+      <p>Example:</p>
+      <code>
+        x = 0
+        if x > 0:
+            print("x is positive")
+        elif x < 0:
+            print("x is negative")
+        else:
+            print("x is zero")
+      </code>
+      <p>This code will print "x is zero" because the condition x > 0 and x < 0 are false, and the else block is executed.</p>
+      <header>Nested If Statement</header>
+      <p>Nested if statements are if statements within if statements. They are used to test multiple conditions. It has the following syntax:</p>
+      <code>
+        if condition1:
+            if condition2:
+                # code block
+      </code>
+      <p>Example:</p>
+      <code>
+        x = 5
+        y = 10
+        if x > 0:
+            if y > 0:
+                print("x and y are positive")
+      </code>
+      <p>This code will print "x and y are positive" because both conditions x > 0 and y > 0 are true.</p>
+      <header>Conditional Expressions</header>
+      <p>Conditional expressions are used to assign a value to a variable based on a condition. It has the following syntax:</p>
+      <code>
+        variable = value1 if condition else value2
+      </code>
+      <p>Example:</p>
+      <code>
+        x = 5
+        result = "positive" if x > 0 else "negative"
+        print(result)
+      </code>
+      <p>This code will print "positive" because the condition x > 0 is true.</p>
+      <p>These are the basic conditional statements in Python. Understanding how to use them is essential for writing efficient and effective code.</p>
     </section>
      <section class="main-section" id="">
         <a class="nav-link"></a>
