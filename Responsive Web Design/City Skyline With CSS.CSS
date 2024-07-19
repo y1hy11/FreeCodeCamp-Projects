@@ -6,6 +6,7 @@
   --window-color1: black;
   --window-color2: #8cd9b3;
   --window-color3: #d98cb3;
+  --window-color4: #8cb3d9;
 }
 
 * {
@@ -29,13 +30,22 @@ body {
   top: 0;
 }
 
+.building-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.window-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 /* BACKGROUND BUILDINGS - "bb" stands for "background building" */
 .bb1 {
   width: 10%;
   height: 70%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .bb1a {
@@ -88,15 +98,45 @@ body {
       var(--window-color2) 9%
     );
 }
+
 .bb3 {
   width: 10%;
   height: 55%;
-  background-color: var(--building-color3);
+  background: repeating-linear-gradient(
+      90deg,
+      var(--building-color3),
+      var(--building-color3),
+      var(--window-color3) 15%
+    );
 }
+
 .bb4 {
   width: 11%;
   height: 58%;
+}
+
+.bb4a {
+  width: 3%;
+  height: 10%;
   background-color: var(--building-color4);
+}
+
+.bb4b {
+  width: 80%;
+  height: 5%;
+  background-color: var(--building-color4);
+}
+  
+.bb4c {
+  width: 100%;
+  height: 85%;
+  background-color: var(--building-color4);
+}
+
+.bb4-window {
+  width: 18%;
+  height: 90%;
+  background-color: var(--window-color4);
 }
 
 /* FOREGROUND BUILDINGS - "fb" stands for "foreground building" */
@@ -104,6 +144,15 @@ body {
   width: 10%;
   height: 60%;
   background-color: var(--building-color4);
+}
+
+.fb1b {
+  width: 60%;
+  height: 10%;
+}
+.fb1c {
+  width: 100%;
+  height: 80%;
 }
 
 .fb2 {
