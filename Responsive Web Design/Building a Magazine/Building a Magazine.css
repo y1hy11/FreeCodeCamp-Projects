@@ -145,3 +145,13 @@ hr {
   gap: 2rem;
   place-items: center;
 }
+
+.image-1, .image-3 {
+  grid-column: 1 / -1;
+}
+
+@media only screen and (max-width: 720px) {
+  .image-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
