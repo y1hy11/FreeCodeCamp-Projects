@@ -9,7 +9,7 @@
 </head>
 <body>
     <header id="header">
-        <img id="header-img" src="logo.png" alt="Logo">
+        <img id="header-img" src="https://www.hydroflask.com/static/version1721727081/frontend/HoT/hydroflask/en_US/images/logo/logo.svg" alt="Logo">
         <nav id="nav-bar">
             <ul>
                 <li><a class="nav-link" href="#home">Home</a></li>
@@ -17,6 +17,7 @@
                 <li><a class="nav-link" href="#features">Features</a></li>
                 <li><a class="nav-link" href="#pricing">Pricing</a></li>
                 <li><a class="nav-link" href="#contact">Contact</a></li>
+                <li><a id="shop-now" class="nav-link" href="#pricing">Shop Now</a></li>
             </ul>
         </nav>
     </header>
@@ -27,76 +28,81 @@
             <button onclick="location.href='#pricing'">Shop Now</button>
         </section>
         <section id="about">
-            <h2>Description</h2>
-            <p>Our reusable water bottles are made from high-quality, food-grade stainless steel that is durable and long-lasting. They are designed to keep your drinks cold for up to 24 hours and hot for up to 12 hours. Plus, they are BPA-free and eco-friendly, reducing your carbon footprint and saving you money in the long run.</p>
+          <h2>Description</h2>
+          <div class="about">
+            <p>Hydro Flask water bottles are made from high-quality, food-grade stainless steel that is durable and long-lasting.<br> They are designed to keep your drinks cold for up to 24 hours and hot for up to 12 hours.<br> Plus, they are BPA-free and eco-friendly, reducing your carbon footprint and saving you money in the long run.<br> Hydro Flask creates insulated, stainless steel water bottles to keep you hydrated on any adventure.<br>Their bottles are vacuum-insulated, keeping your drinks cold for hours, and are made to be your go-to sidekick from office <br> to trailhead. They offer a wide range of sustainable, stylish, and high-quality products to elevate your hydration game.<br> One popular option is the 21 oz Standard Mouth, which offers high-quality, eco-friendly refreshment with a classic touch.</p>
+          </div>
         </section>
         <section id="features">
             <h2>Features</h2>
+            <div class="features">
               <ul>
                 <li>High-quality, food-grade stainless steel</li>
                 <li>Keeps drinks cold for up to 24 hours and hot for up to 12 hours</li>
                 <li>BPA-free and eco-friendly</li>
                 <li>Multiple sizes and colors available</li>
+                <li>Easy to carry</li>
               </ul>
-              <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/lrhtMIUUsyg" frameborder="0" allowfullscreen></iframe>
-          </section>
-          <section id="pricing">
-            <h2>Choose the perfect bottle for you</h2>
-              <div class="plans">
-                <div class="plan">
-                 <h3>EcoLite</h3>
-                  <p>$14.99</p>
-                   <ul>
-                     <li>18oz capacity</li>
-                     <li>BPA-free Tritan material</li>
-                     <li>Dishwasher safe</li>
-                     <li>Compact design</li>
-                   </ul>
-                <button>SELECT</button>
-               </div>
-                <div class="plan featured">
-                 <h3>EcoPro</h3>
-                  <p>$24.99</p>
-                   <ul>
-                    <li>27oz capacity</li>
-                    <li>BPA-free Tritan material</li>
-                    <li>Dishwasher safe</li>
-                    <li>Insulated design keeps drinks hot or cold for hours</li>
-                    <li>Leak-proof lid</li>
-                  </ul>
-                 <button>SELECT</button>
-               </div>
-                <div class="plan">
-                   <h3>EcoElite</h3>
-                   <p>$39.99</p>
-                  <ul>
-                    <li>32oz capacity</li>
-                    <li>BPA-free Tritan material</li>
-                    <li>Dishwasher safe</li>
-                    <li>Insulated design keeps drinks hot or cold for hours</li>
-                    <li>Leak-proof lid</li>
-                    <li>Customizable with your name or logo</li>
-                  </ul>
-                 <button>SELECT</button>
+              <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/ke6wPoCOTRM" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+        <h2>Choose the perfect bottle for you</h2>
+        <section id="pricing">
+            <div class="product">
+              <div class="level">EcoLite</div>
+                <p>$14.99</p>
+                 <ol>
+                   <li>18oz capacity</li>
+                   <li>BPA-free Tritan material</li>
+                   <li>Dishwasher safe</li>
+                   <li>Compact design</li>
+                 </ol>
+              <button class="btn">SELECT</button>
               </div>
-             </div>
-           </section>
+              <div class="product">
+              <div class="level">EcoPro</div>
+                <p>$24.99</p>
+                 <ol>
+                  <li>27oz capacity</li>
+                  <li>BPA-free Tritan material</li>
+                  <li>Dishwasher safe</li>
+                  <li>Insulated design keeps drinks hot or cold for hours</li>
+                  <li>Leak-proof lid</li>
+                </ol>
+               <button class="btn">SELECT</button>
+              </div>
+               <div class="product">
+              <div class="level">EcoElite</div>
+                 <p>$39.99</p>
+                <ol>
+                  <li>32oz capacity</li>
+                  <li>BPA-free Tritan material</li>
+                  <li>Dishwasher safe</li>
+                  <li>Insulated design keeps drinks hot or cold for hours</li>
+                  <li>Leak-proof lid</li>
+                  <li>Customizable with your name or logo</li>
+                </ol>
+               <button class="btn">SELECT</button>
+              </div>
+         </section>
            <section id="contact" class="contact-section">
             <h2>Stay in Touch</h2>
-            <p>Want to learn more about EcoBottles or have a question? We'd love to hear from you!</p>
-          <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <input id="email" name="email" type="email" placeholder="Enter your email address">
-            <input id="submit" type="submit" value="Get in Touch">
-          </form>
-          <div class="social-links">
+            <div class="contact">
+              <p>Want to learn more about hydroflask or have a question? We'd love to hear from you!</p>
+              <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input id="email" name="email" type="email" placeholder="Enter your email address">
+                <input id="submit" type="submit" value="Get in Touch">
+              </form>
+           <div class="social-links">
             <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
             <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-          </div>
+           </div>
+           </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2023 EcoBottles. All rights reserved.</p>
-    </footer>
+<footer>
+   <p>&copy; 2024 hydroflask. Education Purposes.</p>
+</footer>
 </body>
 </html>
