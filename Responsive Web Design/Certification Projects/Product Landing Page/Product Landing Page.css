@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  #header {
+    position: fixed;
+    background-color: #ffffffa6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  #header-img {
+    max-width: 10rem;
+  }
+  
+  #nav-bar ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  #nav-bar ul li {
+    margin: 0 15px;
+  }
+  
+  #nav-bar a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  #nav-bar a:hover {
+    color: #3e94f5;
+  }
+  
+  section {
+    margin-bottom: 40px;
+    padding: 20px;
+  
+  }
+  
+  #home {
+    background-image: linear-gradient(115deg, rgba(54, 54, 54, 0.8), rgba(63, 63, 68, 0.7)), url('https://www.ecofriendlyhabits.com/wp-content/uploads/2019/08/eco-friendly-water-bottles.jpg');
+    background-size: cover;  
+    background-position: center; 
+    color: white; 
+    padding: 200px 20px; 
+    text-align: center; 
+    width: 100%;
+    height: 700px;
+  }
+  
+  #home p {
+    padding: 20px;
+    font-size: 22px;
+  }
+  
+  h1, h2 {
+    color: #0077cc;
+    font-size: 35px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  
+  button {
+    background: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background: #005fa3;
+  }
+  
+  #about p {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 100px;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 100px;
+    padding-bottom: 100px;
+    font-size: 25px;
+  }
+  #features ul {
+    list-style: none;
+  }
+  
+  #features li {
+    margin-bottom: 10px;
+  }
+  #pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+  }
+  
+  .product > .level {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .product p {
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(0, 132, 255);
+  }
+  .product > h2 {
+    margin-top: 15px;
+  }
+  
+  .product > ol {
+    margin: 15px 0;
+    list-style: none;
+  }
+  
+  .product > ol > li {
+    padding: 5px 0;
+  }
+  
+  .product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #0f81f1;
+    font-weight: 400;
+  }
+  
+  .product > button:hover {
+    background-color: #0a6cce;
+    transition: background-color 1s;
+  }
+  
+  #contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #contact p {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #contact input[type="email"] {
+    width: 500px;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #contact input[type="submit"] {
+    width: 150px;
+    height: 40px;
+    background-color: #2f75d1;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #contact input[type="submit"]:hover {
+    background-color: #3692bd;
+  }
+  
+  .social-links {
+    margin-top: 30px;
+  }
+  
+  .social-links a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #666;
+  }
+  
+  .social-links a:hover {
+    color: #3249cc;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #0077cc;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  
+    #header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    #nav-bar ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    #nav-bar ul li {
+      margin: 10px 0;
+    }
+  
+    #home {
+      padding: 100px 20px;
+    }
+  
+    #home p {
+      font-size: 18px;
+    }
+  
+    h1, h2 {
+      font-size: 28px;
+    }
+  
+    #about p {
+      top: 0;
+      font-size: 20px;
+      padding-bottom: 0;
+    }
+  
+    .features {
+      top: 0;
+      padding-bottom: 0;
+      font-size: 20px;
+    }
+  
+    #pricing {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    #contact input[type="email"] {
+      width: 100%;
+    }
+  }
+  
