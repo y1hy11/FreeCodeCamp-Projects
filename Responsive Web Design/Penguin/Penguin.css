@@ -117,6 +117,26 @@ body {
   right: 15%;
 }
 
+.beak {
+  height: 10%;
+  background-color: var(--penguin-picorna);
+  border-radius: 50%;
+}
+
+.beak.top {
+  width: 20%;
+  top: 60%;
+  left: 40%;
+}
+
+.beak.bottom {
+  width: 16%;
+  top: 65%;
+  left: 42%;
+}
+
+
+
 .ground {
     width: 100vw;
     height: 400px;
