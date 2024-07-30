@@ -13,6 +13,14 @@ body {
     margin: auto;
     margin-top: 75px;
   }
+  .penguin * {
+    position: absolute;
+  }
+  
+  .penguin:active {
+    transform: scale(1.5);
+    cursor: not-allowed;
+  }
 
   .penguin-body {
     width: 53%;
