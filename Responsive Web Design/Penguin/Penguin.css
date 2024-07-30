@@ -101,6 +101,22 @@ body {
   border-radius: 50%;
 }
 
+.blush {
+  width: 15%;
+  height: 10%;
+  background-color: pink;
+  top: 65%;
+  border-radius: 50%;
+}
+
+.blush.left {
+  left: 15%;
+}
+
+.blush.right {
+  right: 15%;
+}
+
 .ground {
     width: 100vw;
     height: 400px;
