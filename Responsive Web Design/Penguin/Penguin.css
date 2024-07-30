@@ -1,54 +1,89 @@
-:root
+:root {
+  --penguin-face: white;
+  --penguin-picorna: orange;
+  --penguin-skin: gray;
+}
+
 body {
-    background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+  background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.ground {
+  width: 100vw;
+  height: calc(100vh - 300px);
+  background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
+  z-index: 3;
+  position: absolute;
+  margin-top: -58px;
+}
+
+.left-mountain {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
+  position: absolute;
+  transform: skew(0deg, 44deg);
+  z-index: 2;
+  margin-top: 100px;
+}
+
+.back-mountain {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
+  position: absolute;
+  z-index: 1;
+  transform: rotate(45deg);
+  left: 110px;
+  top: 225px;
+}
+
+.sun {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  position: absolute;
+  border-radius: 50%;
+  top: -75px;
+  right: -75px;
 }
 
 .penguin {
-    width: 300px;
-    height: 300px;
-    margin: auto;
-    margin-top: 75px;
-}
-.penguin * {
-    position: absolute;
-}
-  
-.penguin:active {
-    transform: scale(1.5);
-    cursor: not-allowed;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  margin-top: 75px;
+  z-index: 4;
+  position: relative;
+  transition: transform 1s ease-in-out 0ms;
 }
 
-.penguin-body {
-    width: 53%;
-    height: 45%;
-    background: linear-gradient(
-      45deg,
-      rgb(134, 133, 133) 0%,
-      rgb(234, 231, 231) 25%,
-      white 67%
-    );
-    border-radius: 80% 80% 100% 100%;
-    top: 40%;
-    left: 23.5%;
+.penguin * {
+  position: absolute;
+}
+
+.penguin:active {
+  transform: scale(1.5);
+  cursor: not-allowed;
 }
 
 .penguin-head {
-    width: 50%;
-    height: 45%;
-    background: linear-gradient(
-      45deg,
-      gray,
-      rgb(239, 240, 228)
-    );
-    border-radius: 70% 70% 65% 65%;
-    top: 10%;
-    left: 25%;
-    z-index: 1;
+  width: 50%;
+  height: 45%;
+  background: linear-gradient(
+    45deg,
+    var(--penguin-skin),
+    rgb(239, 240, 228)
+  );
+  border-radius: 70% 70% 65% 65%;
+  top: 10%;
+  left: 25%;
+  z-index: 1;
 }
 
 .face {
@@ -75,7 +110,6 @@ body {
   left: 5%;
   border-radius: 70% 70% 100% 100%;
 }
-
 
 .eye {
   width: 15%;
@@ -176,7 +210,6 @@ body {
   opacity: 70%;
 }
 
-
 .arm {
   width: 30%;
   height: 60%;
@@ -218,6 +251,15 @@ body {
   }
 }
 
+.foot {
+  width:  15%;
+  height: 30%;
+  background-color: var(--penguin-picorna);
+  top: 85%;
+  border-radius: 50%;
+  z-index: -1;
+}
+
 .foot.left {
   left: 25%;
   transform: rotate(80deg);
@@ -228,41 +270,6 @@ body {
   transform: rotate(-80deg);
 }
 
-.ground {
-    width: 100vw;
-    height: calc(100vh - 300px);
-    background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
-    z-index: 3;
-    position: absolute;
-}
 
-.left-mountain {
-    width: 300px;
-    height: 300px;
-    background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
-    position: absolute;
-    transform: skew(0deg, 44deg);
-    z-index: 2;
-    margin-top: 100px;
-}
 
-.back-mountain {
-    width: 300px;
-    height: 300px;
-    background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
-    position: absolute;
-    z-index: 1;
-    transform: rotate(45deg);
-    left: 110px;
-    top: 225px;
-}
-
-.sun {
-    width: 200px;
-    height: 200px;
-    background-color: yellow;
-    position: absolute;
-    border-radius: 50%;
-    top: -75px;
-    right: -75px;
-}
+/*      Big Thanks to FreeCodeCamp <3       */
