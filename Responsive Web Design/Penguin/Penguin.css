@@ -27,7 +27,21 @@ body {
     top: 40%;
     left: 23.5%;
   }
-  
+
+  .penguin-head {
+    width: 50%;
+    height: 45%;
+    background: linear-gradient(
+      45deg,
+      gray,
+      rgb(239, 240, 228)
+    );
+    border-radius: 70% 70% 65% 65%;
+    top: 10%;
+    left: 25%;
+    z-index: 1;
+  }
+
   .ground {
     width: 100vw;
     height: 400px;
