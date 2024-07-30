@@ -1,3 +1,4 @@
+:root
 body {
     background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));
     margin: 0;
@@ -229,7 +230,7 @@ body {
 
 .ground {
     width: 100vw;
-    height: 400px;
+    height: calc(100vh - 300px);
     background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
     z-index: 3;
     position: absolute;
