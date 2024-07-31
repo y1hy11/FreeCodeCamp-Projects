@@ -4,6 +4,13 @@ body {
     padding: 0;
 }
 
+header img {
+    position: fixed;
+    top: -16px;
+    left: 5px;
+    z-index: 1;
+}
+
 #navbar {
     position: fixed;
     top: 0;
