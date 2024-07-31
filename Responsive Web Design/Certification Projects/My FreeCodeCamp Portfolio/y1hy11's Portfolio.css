@@ -42,6 +42,17 @@ body {
     background-color: #f0f0f0;
 }
 
+.about h1 {
+    font-size: 3em;
+    margin: 20px;
+    text-align: center;
+}
+.about p {
+    font-size: 1.2em;
+    margin-top: 30px;
+    text-align: center;
+}
+
 #projects {
     padding: 2em;
 }
