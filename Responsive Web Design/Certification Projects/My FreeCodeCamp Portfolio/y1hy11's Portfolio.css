@@ -73,6 +73,11 @@ header img {
     text-align: center;
 }
 
+h2 {
+    padding-bottom: 20px;
+  
+  }
+
 #projects {
     padding: 2em;
 }
@@ -87,6 +92,22 @@ header img {
 
 .project-tile h3 {
     margin-top: 0;
+    padding: 10px;
+    text-align: center;
+}
+.project-tile p {
+    text-align: center;
+    padding: 10px;
+}
+
+.project-tile a {
+    display: flex;
+    justify-content: center;
+}
+
+.project-tile img {
+    width: 100%;
+    height: auto;
 }
 
 @media (max-width: 768px) {
