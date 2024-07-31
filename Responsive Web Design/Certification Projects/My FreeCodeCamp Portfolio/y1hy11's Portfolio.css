@@ -19,14 +19,27 @@ body {
     justify-content: space-between; /* added to space out li elements */
 }
 
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+}
+
 #navbar ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: right;
 }
 
 #navbar li {
-    margin-bottom: 20px; /* added margin to space out li elements */
+    margin: 20px;
 }
 
 #navbar a {
