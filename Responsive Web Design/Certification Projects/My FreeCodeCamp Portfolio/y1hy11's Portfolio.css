@@ -27,9 +27,9 @@ header img {
     padding: 1em;
     text-align: center;
     display: flex;
-    flex-direction: column; /* changed from row to column */
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between; /* added to space out li elements */
+    justify-content: space-between;
 }
 
 #navbar {
