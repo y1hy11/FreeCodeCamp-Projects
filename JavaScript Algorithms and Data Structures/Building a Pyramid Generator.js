@@ -1,6 +1,3 @@
-console.log("Let's build a pyramid using JavaScript basics:");
-console.log("                 #                            ");
-console.log("                ###                           ");
-console.log("               #####                          ");
-console.log("              #######                         ");
-console.log("             #########                        ");
+const character = "#";
+const count = 8;
+const rows = [];
