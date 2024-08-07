@@ -27,6 +27,6 @@
   <h2>Contributing</h2>
   <p>Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request.</p>
   <h2>FreeCodeCamp Profile</h2>
-  <p>You can view my FreeCodeCamp profile <a href="https://www.freecodecamp.org/Y1hY1__">here</a>.</p>
+  <p>You can view my FreeCodeCamp profile <a href="https://www.freecodecamp.org/Y1hY1__" target="_blank">here</a>.</p>
 </body>
 </html>
