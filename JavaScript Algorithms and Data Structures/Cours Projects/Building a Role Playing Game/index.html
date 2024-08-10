@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <script src="./script.js"></script>
     <title>RPG - Dragon Repeller</title>
 </head>
 <body>
@@ -19,8 +18,12 @@
             <button id="button2">Go to cave</button>
             <button id="button3">Fight dragon</button>
         </div>
-        <div id="monsterStats"></div>
+        <div id="monsterStats">
+            <span class="stat">Monster Name: <strong><span id="monsterName"></span></strong></span>
+            <span class="stat">Health: <strong><span id="monsterHealth"></span></strong></span>
+        </div>
         <div id="text"></div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
