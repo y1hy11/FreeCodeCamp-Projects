@@ -172,7 +172,7 @@ function attack() {
     defeatMonster();
   }
 }
-}
+
 
 function dodge() {
 
