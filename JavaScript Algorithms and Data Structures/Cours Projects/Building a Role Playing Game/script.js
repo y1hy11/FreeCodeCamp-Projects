@@ -69,6 +69,12 @@ const locations = [
     "button text": ["Go to town square", "Go to town square", "Go to town square"],
     "button functions": [goTown, goTown, goTown],
     text: "The monster screams Arg! as it dies. You gain experience points and find gold.",
+  },
+  {
+    name: "lose",
+    "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
+    "button functions": [restart, restart, restart],
+    text: "You die. &#x2620;",
   }
 ];
 
@@ -176,6 +182,11 @@ function attack() {
     lose();
   } else if (monsterHealth <= 0) {
     defeatMonster();
+    if (fighting === 2) {
+      winGame();
+    } else {
+      defeatMonster();
+    }
   }
 }
 
