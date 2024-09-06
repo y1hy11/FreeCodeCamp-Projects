@@ -42,4 +42,10 @@ function getAverage(scores) {
     return message;
   }
   console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89]));
+
+  /*
+  Big Thanks to FreeCodeCamp 
+
+  All rights reserved to FreeCodeCamp 
+*/
   

@@ -22,3 +22,9 @@ for (const row of rows) {
 }
 
 console.log(result);
+
+/*
+  Big Thanks to FreeCodeCamp 
+
+  All rights reserved to FreeCodeCamp 
+*/

@@ -285,4 +285,9 @@ function pick(guess) {
     }
   }
 }
-//Big Thanks to FreeCodeCamp it waaaaaaas a good project i learn to much thing from it <3
+
+/*
+  Big Thanks to FreeCodeCamp 
+
+  All rights reserved to FreeCodeCamp 
+*/

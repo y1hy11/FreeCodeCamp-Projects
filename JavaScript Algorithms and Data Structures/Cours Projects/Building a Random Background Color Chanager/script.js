@@ -28,3 +28,9 @@ const darkColorsArr = [
   const btn = document.querySelector("#btn");
   
   btn.onclick = changeBackgroundColor;
+
+  /*
+  Big Thanks to FreeCodeCamp 
+
+  All rights reserved to FreeCodeCamp 
+*/
