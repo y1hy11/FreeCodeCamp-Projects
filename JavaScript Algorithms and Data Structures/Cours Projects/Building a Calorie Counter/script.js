@@ -27,6 +27,10 @@ function isInvalidInput(str) {
     targetInputContainer.insertAdjacentHTML('beforeend', HTMLString);
   }
 
+  function calculateCalories(e) {
+
+  }
+
 addEntryButton.addEventListener("click", addEntry);
 
 function getCaloriesFromInputs(list) {
