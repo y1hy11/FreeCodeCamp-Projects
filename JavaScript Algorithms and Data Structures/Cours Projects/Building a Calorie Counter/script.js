@@ -51,6 +51,10 @@ function isInvalidInput(str) {
     const consumedCalories = breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
     const remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
   
+    const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
+    
+    const outputElement = document.getElementById('output');
+    output.innerHTML = ``;
   }
 
 addEntryButton.addEventListener("click", addEntry);
