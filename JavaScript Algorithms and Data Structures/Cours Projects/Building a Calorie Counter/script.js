@@ -42,7 +42,12 @@ function isInvalidInput(str) {
     const dinnerCalories = getCaloriesFromInputs(dinnerNumberInputs);
     const snackCalories = getCaloriesFromInputs(snacksNumberInputs);
     const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
-    
+    const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
+
+    if (isError) {
+      return;
+    }
+
   }
 
 addEntryButton.addEventListener("click", addEntry);
