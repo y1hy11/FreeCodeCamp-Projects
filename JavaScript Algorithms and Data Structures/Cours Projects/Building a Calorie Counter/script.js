@@ -48,6 +48,9 @@ function isInvalidInput(str) {
       return;
     }
 
+    const consumedCalories = breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
+    const remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
+  
   }
 
 addEntryButton.addEventListener("click", addEntry);
