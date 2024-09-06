@@ -61,14 +61,10 @@ function calculateCalories(e) {
     return;
   }
 
-  const consumedCalories =
-    breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
-  const remainingCalories =
-    budgetCalories - consumedCalories + exerciseCalories;
-
+  const consumedCalories = breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
+  const remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
   const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
 
-  const outputElement = document.getElementById("output");
   output.innerHTML = `
   <span class="${surplusOrDeficit.toLowerCase()}">${Math.abs(remainingCalories)} Calorie ${surplusOrDeficit}</span>
   <hr/>
@@ -76,6 +72,7 @@ function calculateCalories(e) {
   <p>${consumedCalories} Calories Consumed</p>
   <p>${exerciseCalories} Calories Burned</p>
     `;
+  output.classList.remove('hide');
 }
 
 addEntryButton.addEventListener("click", addEntry);
