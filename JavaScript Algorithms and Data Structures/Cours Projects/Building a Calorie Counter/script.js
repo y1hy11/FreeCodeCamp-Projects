@@ -28,6 +28,8 @@ function isInvalidInput(str) {
   }
 
   function calculateCalories(e) {
+    e.preventDefault();
+    isError = false;
 
   }
 
