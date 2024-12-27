@@ -2,7 +2,7 @@
 <html lang="en">
 <body>
   <h1>FreeCodeCamp Responsive Web Design</h1>
-  <p>This repository contains my solutions to the Responsive Web Design certification challenges on FreeCodeCamp.</p>
+  <p>This repository contains solutions to the Responsive Web Design certification challenges on FreeCodeCamp.</p>
   <h2>About the Certification</h2>
   <p>The Responsive Web Design certification is a series of challenges that test my ability to build responsive web pages using HTML, CSS, and responsive design principles. The certification is part of the FreeCodeCamp curriculum, a non-profit organization that offers a comprehensive program in web development.</p>
   <h2>Challenges</h2>
