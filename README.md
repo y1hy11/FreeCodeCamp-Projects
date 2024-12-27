@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <body>
-    <h1>FreeCodeCamp's Core Curriculum</h1>
-    <p>This repository contains solutions to cours and certification challenges on FreeCodeCamp and to showcase my skills in the final or certification projects.</p>
+    <h1>FreeCodeCamp Projects</h1>
+    <p>Welcome to My FreeCodeCamp Repository,This Repository contains solutions to cours and certification challenges on FreeCodeCamp and to showcase my skills in the final or certification projects.</p>
     <h2>About the Certification</h2>
     <p>The FreeCodeCamp  certification is a highly respected credential in the web development industry. It demonstrates an individual's proficiency in  algorithms, and data structures, which are essential skills for any aspiring web developer.</p>
     <h2>Technologies Used</h2>
