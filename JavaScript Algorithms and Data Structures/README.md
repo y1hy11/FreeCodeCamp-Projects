@@ -1,7 +1,7 @@
 <html lang="en">
 <body>
   <h1>JavaScript Algorithms and Data Structures</h1>
-  <p>This repository contains my solutions to JavaScript Algorithms and Data Structures certification challenges on FreeCodeCamp.</p>
+  <p>This repository contains solutions to JavaScript Algorithms and Data Structures certification challenges on FreeCodeCamp.</p>
   <h2>About the Certification</h2>
   <p>The FreeCodeCamp JavaScript Algorithms and Data Structures certification is a highly respected credential in the web development industry. It demonstrates an individual's proficiency in JavaScript fundamentals, algorithms, and data structures, which are essential skills for any aspiring web developer.</p>
   <h2>Challenges</h2>
